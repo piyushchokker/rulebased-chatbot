@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => addOptions(botOptions['main']), 1000);
 
     // Event Listeners
-    sendBtn.addEventListener('click', handleUserMessage);
+    sendBtn.addEventListener('click', () => handleUserMessage());
 
     userInput.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') {
