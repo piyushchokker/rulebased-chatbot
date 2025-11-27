@@ -8,7 +8,7 @@ const PORT = 3000;
 
 // Middleware
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname))); // Serve static files from current directory
+app.use(express.static(path.join(__dirname, 'public'))); // Serve static files from public directory
 
 // CSV File Path
 const CSV_FILE = path.join(__dirname, 'leads.csv');
